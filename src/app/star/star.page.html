@@ -6,4 +6,25 @@
 
 <ion-content>
 
+<ion-list>
+  <ion-header>Escolha o recheido da borda</ion-header>
+  <ion-item>
+    <ion-label>Sem Recheio</ion-label>
+    <ion-toggle name="semrecheio" id="semrecheio" (ionChange)="verificaborda($event)"  [(ngModel)]="pizza.semrecheio"></ion-toggle>
+  </ion-item>
+  <ion-item>
+    <ion-label>Mussarela</ion-label>
+    <ion-toggle name="mussarela" id="mussarela" (ionChange)="verificaborda($event)" [(ngModel)]="pizza.mussarela"></ion-toggle>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Catupiry</ion-label>
+    <ion-toggle name="catupiry" id="catupiry" (ionChange)="verificaborda($event)" [(ngModel)]="pizza.catupiry" ></ion-toggle>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Calabresa</ion-label>
+    <ion-toggle name="calabresa" id="calabresa" (ionChange)="verificaborda($event)" [(ngModel)]="pizza.calabresa"></ion-toggle>
+  </ion-item>
+</ion-list>
 </ion-content>
